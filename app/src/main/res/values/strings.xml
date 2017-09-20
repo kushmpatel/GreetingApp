@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Send Greeting</string>
+    <string name="title_activity_share">ShareActivity</string>
+    <string-array name="message_list">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+        <item>\uD83D\uDE00</item>
+    </string-array>
+
+    <string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>
+</resources>
