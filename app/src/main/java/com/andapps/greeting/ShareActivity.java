@@ -1,13 +1,10 @@
 package com.andapps.greeting;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
-import android.view.MenuItem;
 
 import com.andapps.greeting.adapter.AdapterMessageList;
 import com.google.android.gms.ads.AdRequest;
@@ -34,7 +31,7 @@ public class ShareActivity extends AppCompatActivity {
     }
 
 
-    @Override
+/*    @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(com.andapps.greeting.R.menu.activity_share_menu, menu);
         return true;
@@ -56,7 +53,7 @@ public class ShareActivity extends AppCompatActivity {
             default:
                 return super.onOptionsItemSelected(item);
         }
-    }
+    }*/
 
     private void setLayoutViews() {
         mAdView = (AdView) findViewById(R.id.adView);
