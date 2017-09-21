@@ -50,4 +50,9 @@
 
     <!-- TODO: Remove or change this placeholder text -->
 
+    <string-array name="nav_item_activity_titles">
+        <item>Diwali</item>
+        <item>New Year</item>
+    </string-array>
+
 </resources>

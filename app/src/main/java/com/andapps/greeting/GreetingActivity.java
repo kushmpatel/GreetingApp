@@ -34,6 +34,7 @@ public class GreetingActivity extends AppCompatActivity
 
     // index to identify current nav menu item
     public static int navItemIndex = 0;
+    private String[] activityTitles;
 
 
     public static String CURRENT_TAG = TAG_DIWALI;
@@ -46,6 +47,7 @@ public class GreetingActivity extends AppCompatActivity
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         mHandler = new Handler();
+        activityTitles = getResources().getStringArray(R.array.nav_item_activity_titles);
        /* FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -78,6 +80,8 @@ public class GreetingActivity extends AppCompatActivity
         // selecting appropriate nav menu item
         selectNavMenu();
 
+
+        setToolbarTitle();
         // if user select the current navigation menu again, don't do anything
         // just close the navigation drawer
         if (getSupportFragmentManager().findFragmentByTag(CURRENT_TAG) != null) {
@@ -222,5 +226,9 @@ public class GreetingActivity extends AppCompatActivity
             mAdView.destroy();
         }
         super.onDestroy();
+    }
+
+    private void setToolbarTitle() {
+        getSupportActionBar().setTitle(activityTitles[navItemIndex]);
     }
 }
