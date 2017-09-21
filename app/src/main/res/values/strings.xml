@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Send Greeting</string>
     <string name="title_activity_share">Send Greeting</string>
-    <string-array name="message_list">
+    <string-array name="diwali_english_message_list">
         <item>Millions of lamps are illuminating to declare the victory of light I wish you happy diwali with endless happiness and prosperity Happy Diwali to You</item>
         <item>Wish you A happy diwali filled with fun and happiness</item>
         <item>On this auspicious day of Diwali Joy, happiness and prosperity Come to your life, through the light from diwali lamps</item>
@@ -15,5 +15,49 @@
         <item>I\’m sending my warmest greetings to you this Deepavali. May you and your family have a blessed and safe diwali celebration. Have fun!</item>
     </string-array>
 
+    <string-array name="diwali_gujarati_message_list">
+        <item>Diwali Gujarati Messages</item>
+    </string-array>
+
+    <string-array name="diwali_hindi_message_list">
+        <item>Diwali Hindi Messages</item>
+    </string-array>
+
+    <string-array name="new_year_english_message_list">
+        <item>Millions of lamps are illuminating to declare the victory of light I wish you happy diwali with endless happiness and prosperity Happy Diwali to You</item>
+        <item>Wish you A happy diwali filled with fun and happiness</item>
+        <item>On this auspicious day of Diwali Joy, happiness and prosperity Come to your life, through the light from diwali lamps</item>
+        <item>Celebrate the Festival of light Celebrate and enjoy Diwali Celebrate God\’s Victory Happy Diwali to you</item>
+        <item>I wish you a joyful year of prosperity Happy Diwali to you and your family </item>
+        <item>When we say Happy Diwali We say happy for the Victory of god over evil. Say Happy Diwali to Dears and nears To express you happiness for the victory of God</item>
+        <item>Diwali is the festival to celebrate the victory of God And that will be a great Diwali only if you spread the spirit of Diwali to those unfortunate Who are not able to celebrate Diwali When you share Diwali to them God will rejoice and bless you</item>
+        <item>Here\’s my greetings to spread the love and blessings of Goddess of Wealth and Beauty. May you all have a splendid and magnificent celebration of Diwali!</item>
+        <item>Happy Diwali to you and your family</item>
+        <item>May the light of sparkling Diyas bring your life an everlasting hope, fulfillment, happiness and prosperity. Have a happy and blessed Diwali!</item>
+        <item>I\’m sending my warmest greetings to you this Deepavali. May you and your family have a blessed and safe diwali celebration. Have fun!</item>
+    </string-array>
+
+    <string-array name="new_year_gujarati_message_list">
+        <item>New Year Gujarati Messages</item>
+    </string-array>
+
+    <string-array name="new_year_hindi_message_list">
+        <item>New Year Hindi Messages</item>
+    </string-array>
+
     <string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>
+    <string name="title_activity_greeting">GreetingActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="nav_diwali">Diwali</string>
+    <string name="nav_new_year">New Year</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
 </resources>

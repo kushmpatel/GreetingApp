@@ -23,7 +23,7 @@ public class ShareActivity extends AppCompatActivity {
         setContentView(com.andapps.greeting.R.layout.activity_share);
         Toolbar toolbar = (Toolbar) findViewById(com.andapps.greeting.R.id.toolbar);
         setSupportActionBar(toolbar);
-        msgArray = getResources().getStringArray(com.andapps.greeting.R.array.message_list);
+        msgArray = getResources().getStringArray(com.andapps.greeting.R.array.diwali_english_message_list);
         //msgArray = new String[]{"3","2","1"};
         setLayoutViews();
         setAdapterValues();
