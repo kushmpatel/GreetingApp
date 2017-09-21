@@ -22,7 +22,8 @@ public class HindiFragment extends ChildFragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_hindi, container, false);
+        view = inflater.inflate(R.layout.fragment_hindi, container, false);
+        return view;
     }
 
     @Override

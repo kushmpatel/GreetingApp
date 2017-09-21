@@ -118,13 +118,14 @@ public class GreetingActivity extends AppCompatActivity
             case 0:
                 // home
                 DiwaliBaseFragment diwaliFragment = new DiwaliBaseFragment();
-
                 bundle.putString(FROM,TAG_DIWALI);
+                diwaliFragment.setArguments(bundle);
                 return diwaliFragment;
             case 1:
                 // photos
                 NewYearBaseFragment newYearFragment = new NewYearBaseFragment();
                 bundle.putString(FROM,TAG_NEW_YEAR);
+                newYearFragment.setArguments(bundle);
                 return newYearFragment;
             default:
                 return new DiwaliBaseFragment();
