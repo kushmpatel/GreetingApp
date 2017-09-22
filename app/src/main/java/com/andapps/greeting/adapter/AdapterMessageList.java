@@ -70,7 +70,7 @@ public class AdapterMessageList extends RecyclerView.Adapter<RecyclerView.ViewHo
         sharingIntent.setType("text/plain");
         String shareBodyText = message;
         sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Greetings");
-        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBodyText);
+        sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBodyText+"\n\uD83D\uDE4F");
         activity.startActivity(Intent.createChooser(sharingIntent, "Send"));
     }
 }
