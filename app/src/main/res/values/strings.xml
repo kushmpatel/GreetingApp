@@ -103,8 +103,9 @@
     </string-array>
 
     <string name="banner_home_footer">ca-app-pub-3940256099942544/6300978111</string>
-
     <!--<string name="banner_home_footer">ca-app-pub-9184597918832012/9650889580</string>-->
+
+    <string name="interstitial_full_screen">ca-app-pub-3940256099942544/1033173712</string>
 
     <string name="title_activity_greeting">GreetingActivity</string>
 
@@ -117,7 +118,6 @@
 
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
     <!-- TODO: Remove or change this placeholder text -->
 
     <string-array name="nav_item_activity_titles">
