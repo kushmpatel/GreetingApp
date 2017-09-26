@@ -1,5 +1,6 @@
 package com.andapps.greeting;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.support.design.widget.NavigationView;
@@ -13,6 +14,7 @@ import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.util.Log;
+import android.view.Menu;
 import android.view.MenuItem;
 
 import com.andapps.greeting.fragment.DiwaliBaseFragment;
@@ -269,5 +271,29 @@ public class GreetingActivity extends AppCompatActivity
 
     private void setToolbarTitle() {
         getSupportActionBar().setTitle(activityTitles[navItemIndex]);
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.greeting, menu);
+        return true;
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        switch (item.getItemId()) {
+            case com.andapps.greeting.R.id.action_settings:
+
+                Intent sharingIntent = new Intent(android.content.Intent.ACTION_SEND);
+                sharingIntent.setType("text/plain");
+                String shareBodyText = "Download This App to send greetings. \n https://play.google.com/store/apps/details?id=com.andapps.greeting";
+                sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Greeting App");
+                sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, shareBodyText);
+                startActivity(Intent.createChooser(sharingIntent, "Share App"));
+                return true;
+
+            default:
+                return super.onOptionsItemSelected(item);
+        }
     }
 }
