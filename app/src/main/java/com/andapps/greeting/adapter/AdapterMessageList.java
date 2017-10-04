@@ -60,6 +60,7 @@ public class AdapterMessageList extends RecyclerView.Adapter<RecyclerView.ViewHo
                         shareIntent(msgList[position]);
                         break;
                     case 1:
+                        shareIntent(msgList[position]);
                         // Load ads into Interstitial Ads
                         mInterstitialAd.loadAd(adRequest);
                         mInterstitialAd.setAdListener(new AdListener() {
@@ -71,7 +72,7 @@ public class AdapterMessageList extends RecyclerView.Adapter<RecyclerView.ViewHo
                             public void onAdFailedToLoad(int errorCode) {
                                 // Code to be executed when an ad request fails.
                                 Log.d("Ads", "onAdFailedToLoad");
-                                shareIntent(msgList[position]);
+                                //shareIntent(msgList[position]);
                             }
 
                             @Override
@@ -92,7 +93,7 @@ public class AdapterMessageList extends RecyclerView.Adapter<RecyclerView.ViewHo
                                 // Code to be executed when when the user is about to return
                                 // to the app after tapping on an ad.
                                 Log.d("Ads", "onAdClosed");
-                                shareIntent(msgList[position]);
+                                //shareIntent(msgList[position]);
                             }
                         });
                         break;
